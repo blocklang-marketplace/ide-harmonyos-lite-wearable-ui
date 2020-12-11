@@ -19,6 +19,8 @@
         "@blocklang/bootstrap-classes": "~0.0.3-alpha.8",
         "@blocklang/harmonyos-lite-wearable-ui": "~0.0.1-alpha.4",
         "@dojo/framework": "^7.0.5",
+        "@types/css-to-style": "^1.2.0",
+        "css-to-style": "^1.4.0",
         "tslib": "~2.0.3"
     },
     "devDependencies": {
