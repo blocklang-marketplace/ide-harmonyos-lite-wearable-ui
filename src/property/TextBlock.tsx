@@ -10,10 +10,10 @@ const factory = create().properties<SingleProperty>();
 export default factory(function TextBlock({ properties }) {
 	const { index, value = "", onPropertyChanged } = properties();
 	return (
-		<div>
+		<div key="textBlock">
 			<textarea
-				key="textarrea"
-				rows="5"
+				key="textarea"
+				rows="3"
 				classes={[c.form_control]}
 				oninput={(event: KeyboardEvent<HTMLTextAreaElement>) => {
 					const value = event.target.value;
