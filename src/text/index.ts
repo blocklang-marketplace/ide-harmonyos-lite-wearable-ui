@@ -3,6 +3,7 @@ import dimensions from "@dojo/framework/core/middleware/dimensions";
 import * as css from "./index.m.css";
 import ide from "@blocklang/designer-core/middleware/ide";
 import toStyle from "css-to-style";
+import * as previewCss from "@blocklang/harmonyos-lite-wearable-ui/text/Text.m.css";
 
 export interface TextProperties {
 	value?: string;
@@ -40,7 +41,7 @@ export default factory(function Text({ properties, middleware: { dimensions, ide
 			"span",
 			{
 				key: "root",
-				classes: [css.root, ...arrClass],
+				classes: [previewCss.root, css.root, ...arrClass],
 				styles: { ...rootStyles, ...objStyle },
 				...ide.activeWidgetEvents(),
 			},

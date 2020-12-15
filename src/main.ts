@@ -4,9 +4,12 @@ import AppPreview from "@blocklang/harmonyos-lite-wearable-ui/app";
 import AppIde from "./app";
 import PagePreview from "@blocklang/harmonyos-lite-wearable-ui/page";
 import PageIde from "./page";
+import TextPreview from "@blocklang/harmonyos-lite-wearable-ui/text";
+import TextIde from "./text";
 import { widgetInstanceMap } from "@dojo/framework/core/vdom";
 import AppPropertiesLayout from "./app/propertiesLayout";
 import PagePropertiesLayout from "./page/propertiesLayout";
+import TextPropertiesLayout from "./text/propertiesLayout";
 
 const gitUrlSegment: GitUrlSegment = {
 	website: "github.com",
@@ -16,6 +19,7 @@ const gitUrlSegment: GitUrlSegment = {
 const widgets: ExtensionWidgetMap = {
 	App: { widget: AppPreview, ideWidget: AppIde, propertiesLayout: AppPropertiesLayout },
 	Page: { widget: PagePreview, ideWidget: PageIde, propertiesLayout: PagePropertiesLayout },
+	Text: { widget: TextPreview, ideWidget: TextIde, propertiesLayout: TextPropertiesLayout },
 };
 
 blocklang.registerWidgets(gitUrlSegment, widgets);

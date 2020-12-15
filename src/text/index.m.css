@@ -28,11 +28,11 @@
 }
 
 .textarea:empty {
-	min-width: 4rem;
+	min-width: 4em;
 }
 
 .textareaEmpty {
-	min-width: 4rem;
+	min-width: 4em;
 }
 
 .pre {
@@ -85,12 +85,18 @@
 	line-height: inherit;
 }
 
+/*
+ * 6em 是因为默认有6个字；
+ * 10px = 2px * 5；因为字体间隔为2px
+*/
 .div:empty {
-	min-width: 6rem;
+	letter-spacing: normal;
+	min-width: 6em;
 }
 
 .divEmpty {
-	min-width: 6rem;
+	letter-spacing: normal;
+	min-width: 6em;
 }
 
 .div:empty::before {

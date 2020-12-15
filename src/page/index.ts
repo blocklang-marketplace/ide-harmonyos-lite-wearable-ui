@@ -16,10 +16,10 @@ export default factory(function index({ properties, children, middleware: { ide 
 			"div",
 			{
 				key: "root",
-				classes: [c.d_block, c.justify_content_center, c.align_items_center, "h-100"],
+				classes: [c.d_block, c.justify_content_center, c.align_items_center, c.h_100],
 				...activeWidgetEvents,
 			},
-			[]
+			children()
 		),
 		ide.alwaysRenderActiveWidget(),
 	];
